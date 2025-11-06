@@ -24,8 +24,25 @@ It allows you to control PvE/PvP toggling, zone-based protection, looting rules,
 
 1. Download the latest **SimplePVE.cs** file.  
 2. Place it into your server’s `oxide/plugins` directory.  
-3. Restart your server or reload the plugin:
-
+3. A default configuration file will be created in:
    ```bash
-   oxide.reload SimplePVE
+   oxide/config/SimplePVE.json
+   
+## 🔑 Permissions
+
+   | Permission              | Description                               |
+   | ----------------------- | ----------------------------------------- |
+   | `simplepve.admin`       | Full access to all plugin commands.       |
+   | `simplepve.adminloot`   | Allows bypassing loot protection.         |
+   | `simplepve.admindamage` | Allows bypassing PvE damage restrictions. |
+
+## 💬 Commands
+
+   | Command         | Description                                      |
+   | --------------- | ------------------------------------------------ |
+   | `/simplepve`    | Enables or toggles PvE mode.                     |
+   | `/resetsprules` | Resets all rules to default values.              |
+   | `/rsp`          | Reloads the plugin safely.                       |
+   | `/spdebug`      | Toggles debug mode (requires `simplepve.admin`). |
+
 
